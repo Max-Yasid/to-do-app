@@ -16,6 +16,11 @@ class toDoList extends Component{
     }
     render(){
         let itemsLeft = 0;
+        this.props.toDoList.forEach((task) => {
+            if(!task.done){
+                itemsLeft++;
+            }
+        });
         return (
             <div className={(this.props.selectedThemeIsDark ? "list-dark-background": "list-light-background") + " list-container"}>
                 <DragDropContext onDragEnd={this.handleOnDragEnd}>
@@ -23,8 +28,6 @@ class toDoList extends Component{
                     {(provided) => (
                         <ul className="characters" {...provided.droppableProps} ref={provided.innerRef}>
                             {this.props.toDoList.map((toDo,i) => {
-                                if(!toDo.done)
-                                    itemsLeft++;
                                 let doneClass = toDo.done ? ' task-done ' + (this.props.selectedThemeIsDark ? 'task-done-dark' : "task-done-light") : (this.props.selectedThemeIsDark ? " no-done-task-dark" : ' no-done-task-light');
                                 return (
                                     <Draggable index={i} key={toDo.id} draggableId={toDo.id.toString()}>
