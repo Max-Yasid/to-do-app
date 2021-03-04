@@ -1,0 +1,43 @@
+.filter-list-container{
+    height: 100%;
+}
+.config-bar-option{
+    font-weight: 700;
+    cursor: pointer;
+    font-size: .8em;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 25%;
+    color:hsl(234, 11%, 52%);
+}
+.hover-color-dark:hover span{
+    color: hsl(236, 33%, 92%);
+}
+.hover-color-light:hover span{
+    color: hsl(235, 19%, 35%);
+}
+.all-filter{
+    text-align: right;
+}
+.active-filter{
+    text-align: center;
+}
+.completed-filter{
+    text-align: left;
+}
+@media only screen and (max-width: 375px) {
+    .config-bar-option{
+        width: 33%;
+    }
+    .all-filter{
+        text-align: center;
+    }
+    .active-filter{
+        text-align: left;
+    }
+    .completed-filter{
+        text-align: left;
+    }
+    .filter-list-container{
+        justify-content: center;
+    }
+}

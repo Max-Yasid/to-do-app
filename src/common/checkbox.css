@@ -1,0 +1,42 @@
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.checkbox-dark-border{
+    border: 1px solid hsl(237, 14%, 26%);
+}
+.checkbox-light-border{
+    border: 1px solid hsl(233, 11%, 84%);
+}
+.checkbox:hover{
+    cursor: pointer;
+}
+.checkbox-check{
+    width: 8px;
+    height: 8px;
+    color: white;
+}
+.checkbox-dark-background:hover{
+    border:1px solid transparent;
+    background-image: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-image:  20% round;
+}
+.checkbox-checked-dark-background:hover{
+    background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-clip:border-box;
+}
+
+.checkbox-light-background:hover{
+    border:1px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-image:  20% round;
+}
+.checkbox-checked-light-background:hover{
+    background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-clip: border-box;
+}

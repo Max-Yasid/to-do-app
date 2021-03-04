@@ -1,0 +1,22 @@
+.mode-toggler-container{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+    height: 55px;
+}
+.title{
+    display: inline-block;
+    height: 100%;
+}
+.mode-toggler{
+    position: relative;
+    height: 100%;
+    padding-top: 0;
+    cursor: pointer;
+}
+.mode-toggler-icon{
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
